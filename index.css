@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0px 80px 72px 80px;
+  padding: 64px 80px 72px 80px;
 }
 .footer__header {
   display: flex;
@@ -87,9 +87,11 @@ body {
   padding: 0px;
   margin: 16px 64px 0px 0px;
 }
-.footer__navigation .footer__navigation-list:last-child {
-  margin: 16px 0px 0px 0px;
+
+.footer__navigation-box:last-child .footer__navigation-list {
+  margin-right: 0;
 }
+
 .footer__navigation-item {
   display: flex;
   flex-direction: column;
@@ -111,7 +113,7 @@ body {
 }
 
 .footer__subscribe {
-  max-width: 645px;
+  max-width: 680px;
   display: flex;
   align-items: center;
 }
