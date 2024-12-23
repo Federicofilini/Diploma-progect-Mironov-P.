@@ -118,6 +118,7 @@ video {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  background-color:transparent;
 }
 /* HTML5 display-role reset for older browsers */
 article,

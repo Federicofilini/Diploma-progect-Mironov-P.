@@ -31,6 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,500&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -267,7 +268,7 @@
               height="48"
             />
             <h3 class="header-h3">Templates</h3>
-            <div class="card-text__box">
+            <div class="card__footer">
               <p class="body-text-p2-regular text--is-grey is--box">
                 For all needs
               </p>
@@ -285,7 +286,7 @@
               height="48"
             />
             <h3 class="header-h3">App Icons</h3>
-            <div class="card-text__box">
+            <div class="card__footer">
               <p class="body-text-p2-regular text--is-grey is--box">
                 High-quality
               </p>
@@ -301,7 +302,7 @@
               height="48"
             />
             <h3 class="header-h3">Slides</h3>
-            <div class="card-text__box">
+            <div class="card__footer">
               <p class="body-text-p2-regular text--is-grey is--box">
                 Pitch-ready
               </p>
@@ -317,7 +318,7 @@
               height="48"
             />
             <h3 class="header-h3">Design Tools</h3>
-            <div class="card-text__box">
+            <div class="card__footer">
               <p class="body-text-p2-regular text--is-grey is--box">
                 Easy to use
               </p>
@@ -344,6 +345,7 @@
           >
         </div>
       </section>
+
       <section class="trending-section">
         <div class="trending__header-box">
           <div>
@@ -351,21 +353,269 @@
             <h2 class="header-h2">Popular Products</h2>
           </div>
           <div class="trending__btn-box">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button
+              class="swiper-button-prev btn--is-small-two base-btn btn--is-gray"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="#0D0D15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="swiper-button-next btn--is-small-two base-btn btn--is-gray"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="#0D0D15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
+
+        <div>
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <article class="swiper-slide">
+              <img
+                src="./img/Trending__img/foto-one.webp"
+                alt=""
+                class="trending-card__img"
+                width="305"
+                height="272"
+              />
+              <div class="trending-card__header-box">
+                <h3 class="header-h3">Travel Hero</h3>
+                <span class="trending-card__price body-text--p2-medium"
+                  >€29.99</span
+                >
+              </div>
+              <div class="card__footer">
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Adventure
+                </p>
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Journey
+                </p>
+              </div>
+              <div class="trending-card__hover">
+                <a href="#" class="base-btn btn--is-wise is-blue link-text-one"
+                  >Go to product</a
+                >
+              </div>
+              <div class="card-status">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z"
+                    stroke="#F8F7FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <img
+                src="./img/Trending__img/foto-two.webp"
+                alt=""
+                class="trending-card__img"
+                width="305"
+                height="272"
+              />
+              <div class="trending-card__header-box">
+                <h3 class="header-h3">Healthcare Pro</h3>
+                <span class="trending-card__price body-text--p2-medium"
+                  >€15.99</span
+                >
+              </div>
+              <div class="card__footer">
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Medical
+                </p>
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Wellness
+                </p>
+              </div>
+              <div class="trending-card__hover">
+                <a href="#" class="base-btn btn--is-wise is-blue link-text-one"
+                  >Go to product</a
+                >
+              </div>
+              <div class="card-status">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z"
+                    stroke="#F8F7FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <img
+                src="./img/Trending__img/foto-three.webp"
+                alt=""
+                class="trending-card__img"
+                width="305"
+                height="272"
+              />
+              <div class="trending-card__header-box">
+                <h3 class="header-h3">Foodish Delight</h3>
+                <span class="trending-card__price body-text--p2-medium"
+                  >€31.99</span
+                >
+              </div>
+              <div class="card__footer">
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Catering
+                </p>
+                <p class="body-text-p2-regular text--is-grey is--box">Food</p>
+              </div>
+              <div class="trending-card__hover">
+                <a href="#" class="base-btn btn--is-wise is-blue link-text-one"
+                  >Go to product</a
+                >
+              </div>
+              <div class="card-status">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z"
+                    stroke="#F8F7FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <img
+                src="./img/Trending__img/foto-four.webp"
+                alt=""
+                class="trending-card__img"
+                width="305"
+                height="272"
+              />
+              <div class="trending-card__header-box">
+                <h3 class="header-h3">Real Estate</h3>
+                <span class="trending-card__price body-text--p2-medium"
+                  >€40.99</span
+                >
+              </div>
+              <div class="card__footer">
+                <p class="body-text-p2-regular text--is-grey is--box">Modern</p>
+                <p class="body-text-p2-regular text--is-grey is--box">Homes</p>
+              </div>
+              <div class="trending-card__hover">
+                <a href="#" class="base-btn btn--is-wise is-blue link-text-one"
+                  >Go to product</a
+                >
+              </div>
+              <div class="card-status">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z"
+                    stroke="#F8F7FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <img
+                src="./img/Trending__img/foto-three.webp"
+                alt=""
+                class="trending-card__img"
+                width="305"
+                height="272"
+              />
+              <div class="trending-card__header-box">
+                <h3 class="header-h3">Travel Hero</h3>
+                <span class="trending-card__price body-text--p2-medium"
+                  >€29.99</span
+                >
+              </div>
+              <div class="card__footer">
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Adventure
+                </p>
+                <p class="body-text-p2-regular text--is-grey is--box">
+                  Journey
+                </p>
+              </div>
+              <div class="trending-card__hover">
+                <a href="#" class="base-btn btn--is-wise is-blue link-text-one"
+                  >Go to product</a
+                >
+              </div>
+              <div class="card-status">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z"
+                    stroke="#F8F7FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </article>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -671,5 +921,25 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".swiper", {
+          // Настройки
+          direction: "vertical",
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
