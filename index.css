@@ -480,8 +480,7 @@ body {
   border: 2px solid var(--StaticPalette-Marina-Marina800, rgba(2, 101, 220, 1));
 }
 
-.--is-short {
-}
+
 
 /* ----------------------------------------------------------------Footer */
 .footer {
@@ -775,7 +774,7 @@ body {
 
 .link--is-grey:hover {
   color: var(--StaticPalette-Marina-Marina600);
-  border-bottom: 1px dashed var(--StaticPalette-Marina-Marina600, #3892f3);
+  
 }
 .link--is-grey:focus {
   color: var(--Elements-Accent-Link, #0265dc);
