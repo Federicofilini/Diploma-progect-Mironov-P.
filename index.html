@@ -37,8 +37,8 @@
   <body>
     <!-- -------------------------------------------------------Header -->
     <header class="header">
-      <nav class="header__nav">
-        <div>
+      <div class="header__logo__nav__box">
+        <h1 style="margin-right: 32px">
           <svg
             width="108"
             height="24"
@@ -79,40 +79,43 @@
               fill="#0265DC"
             />
           </svg>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__list__item">
-            <a href="" class="list__item__link link-3 link--is-black">About</a>
-          </li>
-          <li class="nav__list__item">
-            <a href="" class="list__item__link link-3 link--is-black"
-              >Products</a
-            >
-          </li>
-          <li class="nav__list__item">
-            <a href="" class="list__item__link link-3 link--is-black"
-              >Creators</a
-            >
-          </li>
-          <li class="nav__list__item">
-            <a href="" class="list__item__link link-3 link--is-black">Blog</a>
-          </li>
-          <li class="nav__list__item">
-            <a href="" class="list__item__link link-3 link--is-black"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+        </h1>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="" class="list__item__link link-3 link--is-black"
+                >About</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="list__item__link link-3 link--is-black"
+                >Products</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="list__item__link link-3 link--is-black"
+                >Creators</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="list__item__link link-3 link--is-black">Blog</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="list__item__link link-3 link--is-black"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="header__actions">
-        <lable
-          ><input
-            id="search-input"
-            class="base-input body-text-p3-regular header__input"
-            type="search"
-            placeholder="Search for Digital Assets"
-            required
-        /></lable>
+        <label for="search-input"></label>
+        <input
+          id="search-input"
+          class="base-input body-text-p3-regular header__input"
+          type="search"
+          placeholder="Search for Digital Assets"
+        />
         <button type="button" class="base-btn is-blue btn--is-small">
           <svg
             width="24"
@@ -136,13 +139,13 @@
     <main class="main">
       <section class="promo-section">
         <div class="promo-actions__box">
-          <h1 class="header-h1">
+          <h2 class="header-h1">
             Craft Your Success with Our
             <a href="" target="_self" class="header-h1 link--is-blue"
               >Digital</a
             >
             Assets
-          </h1>
+          </h2>
           <p class="subheader-S5">
             From our inspiring illustrations to dynamic UI/UX kits, elevate your
             projects with our premium digital design resources.
@@ -618,6 +621,236 @@
           </div>
         </div>
       </section>
+      <section class="pricing-section">
+        <div class="pricing-header__box">
+          <p class="body-text-p2-regular text--is-blue">PRICING PLAN</p>
+          <h2 class="header-h2">
+            Choose The Perfect Plan for Creative Potential
+          </h2>
+        </div>
+        <div class="pricing-card__box">
+          <article class="pricing-section__card">
+            <form action="">
+              <div class="card__header__box">
+                <h5 class="header-h5">Standard Membership</h5>
+                <div class="pricind__card__price-box">
+                  <span class="header-h2">€14.99</span>
+                  <p class="body-text-p2-regular text--is-grey">/ Month</p>
+                </div>
+              </div>
+              <div>
+                <ul class="prising__card__list">
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Enhanced Resource Access
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Monthly Credits
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Priority Customer Support
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Community Features Access
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="submit"
+                class="base-btn btn--is-wise btn--is-gray link-text-one --is-onehundred"
+              >
+                Subscribe
+              </button>
+              <div class="card-status --is-invisible">
+                <span class="header-h5 text--is-white">BEST SELLER</span>
+              </div>
+            </form>
+          </article>
+          <article class="pricing-section__card">
+            <form action="">
+              <div class="card__header__box">
+                <h5 class="header-h5">Plus Membership</h5>
+                <div class="pricind__card__price-box">
+                  <span class="header-h2">€29.99</span>
+                  <p class="body-text-p2-regular text--is-grey">/ Month</p>
+                </div>
+              </div>
+              <div>
+                <ul class="prising__card__list">
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      All Standard Benefits
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Increased Monthly Credits
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Early Access to New Releases
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Member-Only Offers
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="submit"
+                class="base-btn btn--is-wise btn--is-gray link-text-one --is-onehundred"
+              >
+                Subscribe
+              </button>
+              <div class="card-status -is-invisible">
+                <span class="header-h5 text--is-white">BEST SELLER</span>
+              </div>
+            </form>
+          </article>
+          <article class="pricing-section__card">
+            <form action="">
+              <div class="card__header__box">
+                <h5 class="header-h5">Pro Membership</h5>
+                <div class="pricind__card__price-box">
+                  <span class="header-h2">€49.99</span>
+                  <p class="body-text-p2-regular text--is-grey">/ Month</p>
+                </div>
+              </div>
+              <div>
+                <ul class="prising__card__list">
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      All Plus Benefits
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Unlimited Downloads
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Custom Licensing
+                    </p>
+                  </li>
+                  <li class="prising__card__item">
+                    <p class="body-text-p2-regular text--is-grey">
+                      Direct Creator Collaboration
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="submit"
+                class="base-btn btn--is-wise btn--is-gray link-text-one --is-onehundred"
+              >
+                Subscribe
+              </button>
+              <div class="card-status --is-invisible">
+                <span class="header-h5 text--is-white">BEST SELLER</span>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------FAQ Section -->
+      <section class="faq-section">
+        <div class="faq-section__header-box">
+          <p class="body-text-p2-regular text--is-blue">F.A.Q</p>
+          <h2 class="header-h2">Answers to Your Questions</h2>
+          <a
+            href="#"
+            class="base-btn btn--is-medium btn--is-gray link-text-one text--is-black"
+            >Ask Us A Question</a
+          >
+        </div>
+
+        <div class="faq-section__question_countainer">
+          <details class="faq__details">
+            <summary class="faq__question">
+              <h5 class="header-h5">Can I request a refund?</h5>
+            </summary>
+            <div class="faq__details__content">
+              <div class="faq__details__header-box">
+                <h5 class="header-h5 --is-mb">
+                  How do I access my purchased products?
+                </h5>
+              </div>
+              <p class="body-text-p2-regular text--is-grey">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design assets marketplace. Simply log in to your
+                account, navigate to the 'My Purchases' section, and you'll find
+                all your purchased products ready for download.
+              </p>
+            </div>
+          </details>
+          <details class="faq__details">
+            <summary class="faq__question">
+              <h5 class="header-h5">
+                Are there any discounts for bulk purchases?
+              </h5>
+            </summary>
+            <div class="faq__details__content">
+              <div class="faq__details__header-box">
+                <h5 class="header-h5 --is-mb">
+                  How do I access my purchased products?
+                </h5>
+              </div>
+              <p class="body-text-p2-regular text--is-grey">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </div>
+          </details>
+          <details class="faq__details">
+            <summary class="faq__question">
+              <h5 class="header-h5">
+                What payment methods do you accept here?
+              </h5>
+            </summary>
+            <div class="faq__details__content">
+              <div class="faq__details__header-box">
+                <h5 class="header-h5 --is-mb">
+                  How do I access my purchased products?
+                </h5>
+              </div>
+              <p class="body-text-p2-regular text--is-grey">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </div>
+          </details>
+          <details class="faq__details">
+            <summary class="faq__question">
+              <h5 class="header-h5">
+                Can I sell my digital products on this marketplace?
+              </h5>
+            </summary>
+            <div class="faq__details__content">
+              <div class="faq__details__header-box">
+                <h5 class="header-h5 --is-mb">
+                  How do I access my purchased products?
+                </h5>
+              </div>
+              <p class="body-text-p2-regular text--is-grey">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </div>
+          </details>
+        </div>
+      </ыection>
     </main>
 
     <footer class="footer">
@@ -940,6 +1173,26 @@
         });
       });
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <script>
+      // Находим все карточки
+      const articles = document.querySelectorAll(".pricing-section__card");
+
+      articles.forEach((article) => {
+        // Находим кнопку внутри текущей карточки
+        const button = article.querySelector(".base-btn");
+
+        // Добавляем слушатели событий для текущей карточки
+        article.addEventListener("mouseover", () => {
+          button.classList.add("is-blue"); // Добавляем класс .is-blue
+          button.classList.remove("btn--is-gray"); // Удаляем класс .btn--is-gray
+        });
+
+        article.addEventListener("mouseout", () => {
+          button.classList.remove("is-blue"); // Удаляем класс .is-blue
+          button.classList.add("btn--is-gray"); // Возвращаем класс .btn--is-gray
+        });
+      });
+    </script>
   </body>
 </html>
