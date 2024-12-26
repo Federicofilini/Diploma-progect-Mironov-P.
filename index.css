@@ -23,8 +23,6 @@ body {
   margin-inline: auto;
   max-width: 1440px;
   border-radius: 64px 0px 0px 0px;
-
-  background: var(--BG-Alternative2, #f4f7fa);
 }
 /* --------------------------------------------------------------------Header */
 .header {
@@ -176,9 +174,9 @@ body {
 
   border-radius: 20px;
 }
-.card--is-span {
-  grid-row: span 3;
-}
+/* .card--is-span {
+  grid-row: span 1;
+} */
 .card__footer {
   display: flex;
   align-items: center;
@@ -480,8 +478,67 @@ body {
   border: 2px solid var(--StaticPalette-Marina-Marina800, rgba(2, 101, 220, 1));
 }
 
+/* -------------------------------------------------------------Blog-section */
+.blog-section {
+  padding: 0px 80px;
+  margin-bottom: 120px;
+}
+.blog-section__heder-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.blog-section__grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  grid-template-rows: repeat(2, auto); /* Две строки */
+  gap: 32px; /* Расстояние между элементами */
+}
 
+.blog__card {
+  position: relative;
+}
+.card-tag {
+ display:flex;
+ justify-content: center;
+  position: absolute;
+  min-width: 64px;
+  top: 16px;
+  right: 16px;
+  padding: 10px;
+  background-color: var(--StaticPalette-Marina-Marina800);
+  border-radius: 100px;
+}
+.blog__card__link {
+  display: block;
 
+ 
+}
+.card--large {
+  grid-column: 1 / 2; /* Занимает первую колонку */
+  grid-row: 1 / 3; /* Занимает две строки */
+}
+
+.card--medium:nth-of-type(2) {
+  grid-column: 2 / 3; /* Занимает вторую колонку */
+  grid-row: 1 / 2; /* Первая строка */
+}
+
+.card--medium:nth-of-type(3) {
+  grid-column: 2 / 3; /* Занимает вторую колонку */
+  grid-row: 2 / 3; /* Вторая строка */
+}
+.card__img-box img {
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.card__img-box {
+  overflow: hidden;
+  margin-bottom: 24px;
+}
 /* ----------------------------------------------------------------Footer */
 .footer {
   margin-inline: auto;
@@ -774,7 +831,6 @@ body {
 
 .link--is-grey:hover {
   color: var(--StaticPalette-Marina-Marina600);
-  
 }
 .link--is-grey:focus {
   color: var(--Elements-Accent-Link, #0265dc);
@@ -789,8 +845,11 @@ body {
 .text--is-blue {
   color: #0f73f6;
 }
-.text--is-grey {
+.text--is-dark-grey {
   color: #222222;
+}
+.text--is-grey {
+  color: var(--Text-Icons-Elements-Secondary, #2a3541d9);
 }
 .text--is-white {
   color: var(--background--is-white);
