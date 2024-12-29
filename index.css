@@ -17,12 +17,12 @@
   --CriticalityStatuses-Positive: #008f5d;
   --spacing-large: 48px;
   --spacing-small: 8px;
+  --padding-horizontal: 80px; 
 }
 
 body {
   margin-inline: auto;
   max-width: 1440px;
-  border-radius: 64px 0px 0px 0px;
 }
 /* --------------------------------------------------------------------Header */
 .header {
@@ -32,6 +32,7 @@ body {
   max-width: 1440px;
   padding: 24px 80px;
   background-color: var(--background--is-white);
+  box-shadow: 0px 4px 40px 0px #1d395f05;
 }
 .header__logo__nav__box {
   display: flex;
@@ -60,7 +61,16 @@ body {
 
 /* --------------------------------------------------------------------main */
 .main {
+  
+  
   background-color: var(--background--is-white);
+}
+.padding-horizontal {
+  padding: 0px var(--padding-horizontal); 
+}
+.--is-flex {
+  display: flex;
+  gap: 24px;
 }
 /* ------------------------------------------------------------------------Promo */
 .promo-section {
@@ -150,7 +160,7 @@ body {
 /* ------------------------------------------------------------Categories */
 .categories-section {
   display: flex;
-  padding: 0px 80px;
+
   margin-bottom: 120px;
   gap: 64px;
 }
@@ -227,7 +237,6 @@ body {
 }
 /* ------------------------------------------------------------------Trending Section */
 .trending-section {
-  padding: 0px 80px;
   margin-bottom: 120px;
 }
 .trending__header-box {
@@ -245,10 +254,13 @@ body {
 }
 .swiper-wrapper {
   display: flex;
+  
   gap: 16px;
   overflow: hidden;
 }
 .swiper-slide {
+  
+  
   position: relative;
   width: 305px;
   height: auto;
@@ -256,14 +268,16 @@ body {
 }
 
 .trending-card__hover {
+  
   visibility: hidden;
   opacity: 0;
   position: absolute;
   top: 115px;
   right: 0px;
   padding: 0px 16px;
-  transition: visibility 0s, opacity 0.5s ease; /* Анимация для плавности */
+  transition: visibility 0s, opacity 0.5s ease; 
 }
+
 .swiper-slide:hover {
   opacity: 0.7;
 }
@@ -301,7 +315,6 @@ body {
 }
 /* ----------------------------------------------------------Pricing Section */
 .pricing-section {
-  padding: 0px 80px;
   margin-bottom: 120px;
 }
 .pricing-header__box {
@@ -371,7 +384,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0px 80px;
+
   margin-bottom: 120px;
 }
 .faq-section::after {
@@ -480,7 +493,6 @@ body {
 
 /* -------------------------------------------------------------Blog-section */
 .blog-section {
-  padding: 0px 80px;
   margin-bottom: 120px;
 }
 .blog-section__heder-box {
@@ -500,8 +512,8 @@ body {
   position: relative;
 }
 .card-tag {
- display:flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
   position: absolute;
   min-width: 64px;
   top: 16px;
@@ -512,8 +524,6 @@ body {
 }
 .blog__card__link {
   display: block;
-
- 
 }
 .card--large {
   grid-column: 1 / 2; /* Занимает первую колонку */
@@ -538,6 +548,121 @@ body {
 .card__img-box {
   overflow: hidden;
   margin-bottom: 24px;
+}
+
+/* --------------------------------------------------------------------Catalog Page */
+.catalog__promo-box {
+  width: 1440px;
+  
+  position: relative;
+  padding: 64px 80px;
+  background: linear-gradient(0.23deg, #ffffff 0.2%, #f0f6fd 99.8%);
+  z-index: 1;
+}
+
+.catalog__promo-box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/Backgrounds/Rectangle\ 2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.catalog__container {
+  padding: 0px 80px;
+  margin-bottom: 120px;
+}
+.aside__section {
+  margin-bottom: 40px;
+}
+.aside__section h4 {
+  margin-bottom: 24px;
+}
+.aside__checkbox-box div {
+  margin-bottom: 14px;
+}
+.card__container{
+  display: flex;
+  align-items: center;
+ 
+ flex-direction: column;
+}
+.card-container__header{
+  margin-bottom: 48px;
+  width: 100%;
+}
+.card-container__header__nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.card-container__header__button-box{
+  display: flex;
+  
+
+}
+.card-container__header__nav select{
+  min-width: 156px ;
+  border-radius: 8px;
+  border: 1px solid var(--Elements-SeporatorBold, #1D36532B)
+}
+.card-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+  background: linear-gradient(0deg, rgb(255, 255, 255) -118.9%, #FFFFFF 93.08%);
+
+  z-index: 1;
+
+}
+.button-box__list{
+  
+  display: flex;
+}
+.trending-card__footer-box{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.catalog-card__footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog-card__footer div{
+  display: flex;
+}
+.catalog__card{
+ 
+  position: relative;
+  z-index: -1;
+}
+.catalog__card-tag{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: 100px;
+  padding: 8px  16px;
+}
+.bg-color--is-blue{
+  background-color: var(--StaticPalette-Marina-Marina800, #0265DC);
+
+}
+.bg-color--is-green{
+  background-color: var(--StaticPalette-Emerald-Emerald800, #007772);
+
+}
+.bg-color--is-white{
+  background-color: var(--BG-Base, #FFFFFF);
+
 }
 /* ----------------------------------------------------------------Footer */
 .footer {
@@ -672,22 +797,290 @@ body {
   height: 64px;
   min-width: 240px;
 }
+/* -------------------------------------------------------------Checkbox-Style */
+
+.aside__checkbox-box input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 1px solid var(--Elements-Line, #1f324745);
+  border-radius: 4px;
+  background-color: #ffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 9px;
+}
+
+.aside__checkbox-box input[type="checkbox"]:hover {
+  background: var(--BG-Alternative2, #f4f7fa);
+}
+
+.aside__checkbox-box input[type="checkbox"]:checked {
+  background: var(--StaticPalette-Marina-Marina800, #0265dc);
+  border: none;
+  position: relative;
+}
+.aside__checkbox-box input[type="checkbox"]:disabled {
+  background-color: var(--Elements-SeporatorBold, #1d36532b);
+  border: none;
+  position: relative;
+  cursor: not-allowed;
+}
+.aside__checkbox-box input [type="checkbox"]:invalid {
+  background: var(--StaticPalette-Marina-Marina800, #0265dc);
+  border: 2px solid var(--CriticalityStatuses-Negative, #ea3829);
+  position: relative;
+}
+.aside__checkbox-box input[type="checkbox"]:disabled::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 4px;
+  background-image: url(./img/Icons/Mark.svg);
+  background-repeat: no-repeat;
+}
+
+.aside__checkbox-box input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 4px;
+  background-image: url(./img/Icons/Mark.svg);
+  background-repeat: no-repeat;
+}
+/* ------------------------------------------------------------Radio Buttons Style */
+.custom-radio {
+  display: none;
+}
+
+
+.aside-castom_cheackbox-bol {
+  position: relative;
+  margin-left: 30px;
+}
+
+.aside-castom_cheackbox-bol::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: -2;
+  left: -30px;
+  border: 2px solid var(--Elements-Line, #1f324745);
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.custom-radio:hover + .aside-castom_cheackbox-bol::before {
+  background: var(--BG-Alternative2, #f4f7fa);
+  border: 2px solid var(--Elements-Line, #1f324745);
+}
+
+.custom-radio:active + .aside-castom_cheackbox-bol::before {
+  border: 5px solid var(--StaticPalette-Marina-Marina800, #0265dc);
+}
+
+.custom-radio:focus + .aside-castom_cheackbox-bol::before {
+  outline: 2px solid var(--StaticPalette-Marina-Marina600, #3892f3);
+}
+
+.custom-radio:checked + .aside-castom_cheackbox-bol::before {
+  border: 5px solid var(--StaticPalette-Marina-Marina800, #0265dc);
+}
+
+.custom-radio:invalid + .aside-castom_cheackbox-bol::before {
+  border: 2px solid var(--CriticalityStatuses-Negative, #ea3829);
+}
+/* ----------------------------------------------------------------------------------Slider Style */
+/* Контейнер для стиля переключателей */
+.aside__checkbox-stile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+
+}
+
+/* Общий стиль для переключателей */
+.style-slider {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 50px; 
+  user-select: none;
+}
+
+/* Сам слайдер */
+.switch .slider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 20px;
+  background: var(--Text-Icons-Elements-Disabled, #22344966);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Кнопка на слайдере */
+.switch .slider::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Активное состояние (включено) */
+.style-slider:checked + .switch .slider {
+  background: var(--StaticPalette-Marina-Marina800, #0265DC);
+
+}
+
+.style-slider:checked + .switch .slider::after {
+  transform: translateX(20px);
+}
+
+/* Hover состояние */
+.switch:hover .slider {
+  background: var(--Elements-Line, #1F324745);
+
+}
+
+/* Disabled состояние */
+.style-slider:disabled  {
+  background-color: var(--Elements-SeporatorBold, #1D36532B);
+  cursor: not-allowed;
+}
+
+.style-slider:disabled + .switch .slider {
+  background: #d4d9f2;
+}
+
+/* Focus состояние */
+.style-slider:focus + .switch .slider {
+  border: 2px solid var(--StaticPalette-Marina-Marina600, #3892F3)
+}
+
+/* ------------------------------------------------------------Price-range */
+.price-range {
+  width: 80%;
+  max-width: 215px;
+  text-align: center;
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  width: 215px;
+  height: 4px;
+  background: var(--Elements-SeporatorBold, #1d36532b);
+  border-radius: 5px;
+}
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  outline: none;
+}
+
+.range::-webkit-slider-runnable-track {
+  height: 10px;
+  background: transparent;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--StaticPalette-Marina-Marina800);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-top: -5px; /* Подняли ползунок на 5px */
+}
+
+#range-min {
+  z-index: 1;
+}
+
+.range-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--StaticPalette-Marina-Marina800);
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.price-info {
+  width: 225PX;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+#price-min,
+#price-max {
+  font-size: 16px;
+  color: #222;
+}
+
 /* ------------------------------------------------------Buttons-Style */
 .base-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: nowrap;
+  gap: 8px;
+  margin-right: 8px;
   border-radius: 8px;
   border: 2px solid transparent;
   transition: color 0.5s ease, border 0.5s ease, background-color 0.5s ease;
 }
 .btn--is-small {
   padding: 6px;
+  width: min-content;
 }
 .btn--is-small-two {
   padding: 30px 18px;
 }
+.btn--is-small-three {
+  padding: 8px 20px;
+  min-width: 217px;
+}
 .btn--is-medium {
+  width: min-content;
   padding: 18px 32px;
 }
 .--is-medium-three {
@@ -903,7 +1296,7 @@ body {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--Text-Icons-Elements-Primary, #0d0d15);
+  
 }
 .body-text-p1-regular {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
@@ -918,8 +1311,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .body-text-p3-regular {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
@@ -927,8 +1318,6 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .body-text--p2-medium {
@@ -955,6 +1344,13 @@ body {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+.link-text-three {
+  font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
 }
 .subheader-S5 {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
