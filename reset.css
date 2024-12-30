@@ -160,3 +160,6 @@ a {
   text-decoration: none;
   color: var(--StaticPalette-Marina-Marina600, #3892f3);
 }
+figcaption{
+  display: none;
+}
