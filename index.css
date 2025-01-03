@@ -834,6 +834,10 @@ body {
   box-shadow: 0px 4px 30px 0px #d0d4d8dc;
   border-radius: 20px;
   padding: 20px;
+  transition: transform 0.5s ease;
+}
+.card--in-blog:hover{
+  transform: scale(0.95);
 }
 .tag--on-bottom {
   width: min-content;
@@ -1043,6 +1047,7 @@ body {
   margin-right: 8px;
   padding: 0px 8px;
   outline: none;
+  transition: color 0.5s ease, border 0.5s ease, background-color 0.5s ease;
 }
 .base-input::placeholder {
   color: var(--Text-Icons-Elements-Secondary2, #2a3541b2);
@@ -1057,9 +1062,9 @@ body {
 .base-input:user-invalid {
   border: 1px solid var(--CriticalityStatuses-Negative, #ea3829);
 }
-/* .base-input:valid: user-valid{
+.base-input:user-valid{
   border:1px solid var(--CriticalityStatuses-Positive, #008F5D);
-  } */
+  }
 .base-input:disabled {
   background: var(--Elements-Seporator, #294d7517);
   cursor: not-allowed;
@@ -1491,6 +1496,20 @@ body {
 .link--is-black:active {
   color: var(--StaticPalette-Marina-Marina900, #0054b6);
   border: none;
+}
+
+
+.link--is-blue{
+  width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  gap: 8px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: color 0.5s ease,  ;
+
 }
 .link--is-blue:hover {
   color: var(--StaticPalette-Marina-Marina800, #0265dc);
