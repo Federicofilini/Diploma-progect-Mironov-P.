@@ -163,3 +163,6 @@ a {
 figcaption{
   display: none;
 }
+textarea{
+  resize: none;
+}

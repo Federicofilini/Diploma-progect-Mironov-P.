@@ -73,16 +73,18 @@
                 >Products</a
               >
             </li>
+
             <li class="nav__list__item">
-              <a href="./contact.html" class="list__item__link link-3 link--is-black"
-                >Creators</a
+              <a
+                href="./blog.html"
+                class="list__item__link link-3 link--is-black"
+                >Blog</a
               >
             </li>
             <li class="nav__list__item">
-              <a href="./blog.html" class="list__item__link link-3 link--is-black">Blog</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="" class="list__item__link link-3 link--is-black"
+              <a
+                href="./contact.html"
+                class="list__item__link link-3 link--is-black"
                 >Contact</a
               >
             </li>
@@ -134,7 +136,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="all_categories"
                     name="queen_checkbox"
                   />
@@ -147,7 +149,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="technology"
                     name="queen_checkbox"
                   />
@@ -160,7 +162,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="travel_tourism"
                     name="queen_checkbox"
                   />
@@ -173,7 +175,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="health_fitness"
                     name="queen_checkbox"
                   />
@@ -186,7 +188,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="ecommerce"
                     name="queen_checkbox"
                   />
@@ -199,7 +201,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="education"
                     name="queen_checkbox"
                   />
@@ -212,7 +214,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="entertainment"
                     name="queen_checkbox"
                   />
@@ -225,7 +227,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="others-one"
                     name="queen_checkbox"
                   />
@@ -238,7 +240,7 @@
                 <div>
                   <input
                     type="checkbox"
-                    class="aside-castom_cheackbox"
+                    class="input-modified-checkbox"
                     id="others-two"
                     name="queen_checkbox"
                     disabled
@@ -647,7 +649,8 @@
                 </div>
                 <span
                   class="span-sold-out catalog__card-tag bg-color--is-white body-text--p2-medium text--is-gray"
-                  >SOLD OUT</span>
+                  >SOLD OUT</span
+                >
               </a>
             </article>
             <article class="catalog__card">
@@ -1437,11 +1440,9 @@
           rangeMin.value = maxValue - 1;
         }
 
-        // Обновление текста с ценой
         priceMin.textContent = `€${minValue}`;
         priceMax.textContent = `€${maxValue}`;
 
-        // Обновление синей линии
         const minPercent = (minValue / 1000) * 100;
         const maxPercent = (maxValue / 1000) * 100;
 
@@ -1451,21 +1452,17 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll(".catalog__card"); // Все карточки
+        const cards = document.querySelectorAll(".catalog__card");
 
         cards.forEach((card) => {
-          // Находим элемент с текстом SOLD OUT
           const soldOutSpan = card.querySelector(".span-sold-out");
-          // Находим цену
+
           const priceSpan = card.querySelector(".span-catalog__card__price");
 
-          // Проверяем, если элемент с классом span-sold-out существует и текст равен SOLD OUT
           if (soldOutSpan && soldOutSpan.textContent.trim() === "SOLD OUT") {
-            
             card.style.pointerEvents = "none";
             card.style.opacity = "0.5";
 
-            
             if (priceSpan) {
               priceSpan.textContent = "€00.00";
             }
