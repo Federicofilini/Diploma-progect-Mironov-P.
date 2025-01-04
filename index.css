@@ -395,28 +395,16 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(15, 115, 246, 0.193),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(400px);
 
   margin-bottom: 120px;
 }
-.faq-section::after {
-  position: absolute;
-  content: "";
-  width: 689px;
-  height: 498px;
-  top: 100px;
-  left: 412px;
 
-  background: radial-gradient(
-    circle closest-side,
-    rgba(15, 115, 246, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  backdrop-filter: blur(300px);
-  opacity: 0.2;
-
-  z-index: 1;
-}
 .faq-section__header-box {
   position: relative;
   display: flex;
@@ -425,10 +413,10 @@ body {
   flex-direction: column;
   margin-right: 40px;
   gap: 20px;
+  z-index: 1;
 }
 .faq-section__question_countainer {
   max-width: 620px;
-  z-index: 1;
 }
 
 .faq__details__header-box {
@@ -439,7 +427,7 @@ body {
   width: 620px;
   margin-bottom: 40px;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .faq__details summary {
@@ -447,15 +435,14 @@ body {
   padding: 24px 48px;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0px 4px 40px 0px rgba(29, 57, 95, 0.08);
+  box-shadow: 0px 4px 40px 0px #1d395f14;
+  z-index: 2;
   list-style: none;
-  z-index: 1;
 }
 
 .faq__details__header-box {
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 .faq__details__header-box::after {
   position: absolute;
@@ -836,7 +823,7 @@ body {
   padding: 20px;
   transition: transform 0.5s ease;
 }
-.card--in-blog:hover{
+.card--in-blog:hover {
   transform: scale(0.95);
 }
 .tag--on-bottom {
@@ -1062,9 +1049,9 @@ body {
 .base-input:user-invalid {
   border: 1px solid var(--CriticalityStatuses-Negative, #ea3829);
 }
-.base-input:user-valid{
-  border:1px solid var(--CriticalityStatuses-Positive, #008F5D);
-  }
+.base-input:user-valid {
+  border: 1px solid var(--CriticalityStatuses-Positive, #008f5d);
+}
 .base-input:disabled {
   background: var(--Elements-Seporator, #294d7517);
   cursor: not-allowed;
@@ -1498,8 +1485,7 @@ body {
   border: none;
 }
 
-
-.link--is-blue{
+.link--is-blue {
   width: min-content;
   display: flex;
   align-items: center;
@@ -1508,8 +1494,7 @@ body {
   gap: 8px;
   border-radius: 8px;
   border: 2px solid transparent;
-  transition: color 0.5s ease,  ;
-
+  transition: color 0.5s ease;
 }
 .link--is-blue:hover {
   color: var(--StaticPalette-Marina-Marina800, #0265dc);
