@@ -122,7 +122,7 @@
       <div class="catalog__promo-box">
         <h2 class="header-h1">
           Explore Top<br />
-          <a href="" target="_self" class="header-h1 link--is-blue">UI Kits</a>
+          <a href="/" target="_self" class="header-h1 link--is-blue">UI Kits</a>
           Design Assets
         </h2>
       </div>
@@ -1456,15 +1456,24 @@
 
         cards.forEach((card) => {
           const soldOutSpan = card.querySelector(".span-sold-out");
-
           const priceSpan = card.querySelector(".span-catalog__card__price");
+          const buttonsContainer = card.querySelector(
+            ".catalog-card__footer > div"
+          );
 
           if (soldOutSpan && soldOutSpan.textContent.trim() === "SOLD OUT") {
+            // Отключаем клики по всей карточке
             card.style.pointerEvents = "none";
             card.style.opacity = "0.5";
 
+            // Изменяем цену
             if (priceSpan) {
               priceSpan.textContent = "€00.00";
+            }
+
+            // Скрываем кнопки
+            if (buttonsContainer) {
+              buttonsContainer.style.display = "none";
             }
           }
         });

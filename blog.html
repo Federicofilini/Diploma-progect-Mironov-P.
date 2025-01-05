@@ -324,20 +324,24 @@
               captivate the soul.
             </h4>
           </blockquote>
-          <p class="body-text-p1-regular text--is-gray">
-            Typography is an art that speaks volumes beyond the mere letters on
-            a surface. By applying these tips, designers can elevate their work
-            from mere messages to powerful visual statements. Remember,
-            mastering typography is a journey of continuous learning and
-            experimentation. Embrace the process, and let your designs speak
-            louder than words. Happy designing!
-          </p>
+          <div class="text-block">
+            <p class="body-text-p1-regular text--is-gray" id="text">
+              Typography is an art that speaks volumes beyond the mere letters
+              on a surface. By applying these tips, designers can elevate their
+              work from mere messages to powerful visual statements. Remember,
+              mastering typography is a journey of continuous learning and
+              experimentation. Embrace the process, and let your designs speak
+              louder than words. Happy designing!
+            </p>
+          </div>
         </div>
       </div>
       <div class="blog__card-container">
         <div class="card-container__header">
           <h2 class="header-h2 text--is-black">Related Articles</h2>
-          <a href="./catalod.html" class="link--is-blue link-text-two e"
+          <a
+            href="./catalod.html"
+            class="--is-block link--is-blue link-text-two"
             >Explore All Articles
             <svg
               width="16"
@@ -357,9 +361,9 @@
           </a>
         </div>
         <div class="card-container__wraper">
-          <article class="blog__card card--in-blog">
+          <article class="card--in-blog">
             <a href="#" class="blog__card__link">
-              <div class="card__img-box">
+              <div class="blog-card__img-box">
                 <img
                   src="./img/Blog__img/blog__img-one.webp"
                   alt=""
@@ -383,9 +387,9 @@
               >TAG</span
             >
           </article>
-          <article class="blog__card card--in-blog">
+          <article class="card--in-blog">
             <a href="#" class="blog__card__link">
-              <div class="card__img-box">
+              <div class="blog-card__img-box">
                 <img
                   src="./img/Blog__img/blog__img-two.webp"
                   alt=""
@@ -409,9 +413,9 @@
               >TAG</span
             >
           </article>
-          <article class="blog__card card--in-blog">
+          <article class="card--in-blog">
             <a href="#" class="blog__card__link">
-              <div class="card__img-box">
+              <div class="blog-card__img-box">
                 <img
                   src="./img/Blog-page__img/333.webp"
                   alt=""
@@ -739,5 +743,14 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = document.getElementById("text");
+
+        text.addEventListener("click", function () {
+          text.classList.toggle("expanded");
+        });
+      });
+    </script>
   </body>
 </html>
