@@ -643,13 +643,12 @@ body {
   flex-direction: column;
 }
 .card-container__header {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 48px;
   width: 100%;
 }
 .card-container__header__nav {
   display: flex;
+
   justify-content: space-between;
   margin-bottom: 24px;
 }
@@ -662,14 +661,27 @@ body {
   border: 1px solid var(--Elements-SeporatorBold, #1d36532b);
 }
 .card-box {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-bottom: 48px;
-  background: linear-gradient(0deg, rgb(255, 255, 255) -118.9%, #ffffff 93.08%);
-
   z-index: 1;
 }
+.card-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(
+    188.91deg,
+    rgba(255, 255, 255, 0.5) -118.9%,
+    #ffffff 93.08%
+  );
+}
+
 .button-box__list {
   display: flex;
 }
@@ -867,11 +879,7 @@ body {
   padding: 40px var(--padding-horizontal);
   background-color: #f0f6fd;
 }
-.card-container__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .card-container__wraper {
   display: flex;
   gap: 24px;
@@ -1158,7 +1166,7 @@ body {
   height: 40px;
 }
 .footer__input {
-  height: 64px;
+  height: 62px;
   min-width: 240px;
 }
 /* -------------------------------------------------------------Checkbox-Style */
@@ -1167,9 +1175,9 @@ body {
   position: relative;
   appearance: none;
   -webkit-appearance: none;
-  top: 3px;
-  width: 16px;
-  height: 16px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
   margin: 0;
   border: 1px solid var(--Elements-Line, #1f324745);
   border-radius: 4px;
@@ -1213,10 +1221,10 @@ body {
 .input-modified-checkbox:checked::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 5px;
-  left: 4px;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 6px;
   background-image: url(./img/Icons/Mark.svg);
   background-repeat: no-repeat;
 }
@@ -1233,9 +1241,9 @@ body {
 .aside-castom_cheackbox-bol::before {
   position: absolute;
   content: "";
-  width: 16px;
-  height: 16px;
-  top: -2;
+  width: 20px;
+  height: 20px;
+  top: -4;
   left: -30px;
   border: 2px solid var(--Elements-Line, #1f324745);
   border-radius: 50%;
@@ -1247,7 +1255,6 @@ body {
 
 .custom-radio:hover + .aside-castom_cheackbox-bol::before {
   background: var(--BG-Alternative2, #f4f7fa);
-  border: 2px solid var(--Elements-Line, #1f324745);
 }
 
 .custom-radio:active + .aside-castom_cheackbox-bol::before {
@@ -1259,14 +1266,14 @@ body {
 }
 
 .custom-radio:checked + .aside-castom_cheackbox-bol::before {
-  border: 5px solid var(--StaticPalette-Marina-Marina800, #0265dc);
+  border: 8px solid var(--StaticPalette-Marina-Marina800, #0265dc);
 }
 
 .custom-radio:user-invalid + .aside-castom_cheackbox-bol::before {
   border: 2px solid var(--CriticalityStatuses-Negative, #ea3829);
 }
 /* ----------------------------------------------------------------------------------Slider Style */
-/* Контейнер для стиля переключателей */
+
 .aside__checkbox-stile-box {
   display: flex;
   flex-direction: column;
@@ -1274,7 +1281,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Общий стиль для переключателей */
 .style-slider {
   display: none;
 }
@@ -1289,7 +1295,6 @@ body {
   user-select: none;
 }
 
-/* Сам слайдер */
 .switch .slider {
   position: absolute;
   top: 50%;
@@ -1302,7 +1307,6 @@ body {
   transition: background 0.3s ease;
 }
 
-/* Кнопка на слайдере */
 .switch .slider::after {
   content: "";
   position: absolute;
@@ -1315,7 +1319,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Активное состояние (включено) */
 .style-slider:checked + .switch .slider {
   background: var(--StaticPalette-Marina-Marina800, #0265dc);
 }
@@ -1324,12 +1327,10 @@ body {
   transform: translateX(20px);
 }
 
-/* Hover состояние */
 .switch:hover .slider {
   background: var(--Elements-Line, #1f324745);
 }
 
-/* Disabled состояние */
 .style-slider:disabled {
   background-color: var(--Elements-SeporatorBold, #1d36532b);
   cursor: not-allowed;
@@ -1339,7 +1340,6 @@ body {
   background: #d4d9f2;
 }
 
-/* Focus состояние */
 .style-slider:focus + .switch .slider {
   border: 2px solid var(--StaticPalette-Marina-Marina600, #3892f3);
 }
@@ -1386,7 +1386,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 2;
-  margin-top: -5px; /* Подняли ползунок на 5px */
+  margin-top: -5px;
 }
 
 #range-min {
@@ -1428,24 +1428,28 @@ body {
   border-radius: 8px;
   border: 2px solid transparent;
   transition: color 0.5s ease, border 0.5s ease, background-color 0.5s ease;
+  cursor: pointer;
 }
 .btn--is-oval {
   border-radius: 100px;
 }
 .btn--is-small {
-  padding: 6px;
+  padding: 7px 7px;
   width: min-content;
 }
 .btn--is-small-two {
-  padding: 30px 18px;
+  padding: 28px 18px;
 }
 .btn--is-small-three {
-  padding: 8px 20px;
+  padding: 6px 20px;
   min-width: 217px;
+}
+.btn--is-small-four {
+  padding: 4px 18px;
 }
 .btn--is-medium {
   width: min-content;
-  padding: 18px 32px;
+  padding: 16px 32px;
 }
 .btn--is-medium-two {
   padding: 16px;
@@ -1455,14 +1459,14 @@ body {
   padding: 0px 24px;
 }
 .--is-for-form {
-  padding: 20px 40px;
+  padding: 18px 40px;
 }
 
 .btn--is-wise {
-  padding: 18px 75px;
+  padding: 16px 75px;
 }
 .btn--is-big {
-  padding: 20px 40px;
+  padding: 18px 38px;
 }
 .--is-onehundred {
   width: 100%;
@@ -1492,6 +1496,7 @@ body {
 .is-blue:disabled {
   color: var(--Text-Icons-Elements-Disabled, #22344966);
   background-color: var(--Elements-SeporatorBold, #1d36532b);
+  cursor: not-allowed;
 }
 .btn--is-transparent {
   display: flex;
@@ -1515,6 +1520,13 @@ body {
   background-color: var(--Elements-Seporator, #294d7517);
   border: 4px solid var(--StaticPalette-Marina-Marina600, #3892f3);
 }
+.btn--is-transparent:disabled {
+  background-color: transparent;
+  color: var(--Text-Icons-Elements-Disabled, #22344966);
+  filter: brightness(1.2) saturate(1.5);
+  border: 2px solid transparent;
+  cursor: not-allowed;
+}
 .btn--is-gray {
   border-color: var(--Elements-SeporatorBold, #1d36532b);
   transition: color 0.5s ease, border 0.5s ease;
@@ -1527,6 +1539,13 @@ body {
 }
 .btn--is-gray:focus {
   border: 2px solid var(--StaticPalette-Marina-Marina600, #3892f3);
+}
+.btn--is-gray:disabled {
+  border: 2px solid var(--Text-Icons-Elements-Disabled, #22344966);
+  background-color: var(--Elements-SeporatorBold, #1d36532b);
+  color: var(--Elements-SeporatorBold, #1d36532b);
+  filter: brightness(1) saturate(1.8);
+  cursor: not-allowed;
 }
 /* -------------------------------------------------Linc Style */
 
