@@ -2,48 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+      name="description"
+      content="The main page of your site. Find out more about us, our services and products."
     />
+    <link rel="icon" type="image/png" href="./Property 1=Favicon-2.png" />
     <title>Home page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <!-- -------------------------------------------------------Header -->
     <header class="header">
+      <div>
       <div class="header__logo__nav__box">
-        <h1 style="margin-right: 32px">
+        <a href="/" style="margin-right: 32px">
           <svg
             width="108"
             height="24"
             viewBox="0 0 108 24"
             fill="none"
+            aria-label="Main logo"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -79,7 +64,7 @@
               fill="#0265DC"
             />
           </svg>
-        </h1>
+        </a>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -91,7 +76,7 @@
             </li>
             <li class="nav__list__item">
               <a
-                href="./catalod.html"
+                href="./catalog.html"
                 class="list__item__link link-text-three link--is-black"
                 >Products</a
               >
@@ -114,15 +99,16 @@
           </ul>
         </nav>
       </div>
-      <div class="header__actions">
-        <label for="search-input"></label>
+      <form class="header__actions">
+        <label for="search-input" class="label--hidden"></label>
         <input
           id="search-input"
           class="base-input body-text-p3-regular header__input"
           type="search"
           placeholder="Search for Digital Assets"
+          name="search"
         />
-        <button type="button" class="base-btn is-blue btn--is-small">
+        <a href="./catalod.html" class="base-btn is-blue btn--is-small">
           <svg
             width="24"
             height="24"
@@ -138,22 +124,23 @@
               stroke-linejoin="round"
             />
           </svg>
-        </button>
-      </div>
+        </a>
+      </form>
+    </div>
     </header>
 
     <main class="main">
       <section class="promo-section">
         <div class="promo-actions__box">
-          <h2 class="header-h1">
-            Craft Your Success with<br />
+          <h1 class="header-h1">
+            Craft Your<br />Success with<br />
             Our
-            <a href="" target="_self" class="header-h1 link--is-blue"
+            <a href="#" target="_self" class="header-h1 linc-in-line"
               >Digital</a
             >
             Assets
-          </h2>
-          <p class="subheader-S5">
+          </h1>
+          <p class="subheader-five">
             From our inspiring illustrations to dynamic UI/UX kits, elevate your
             projects with our premium digital design resources.
           </p>
@@ -228,7 +215,7 @@
               height="150"
             />
           </div>
-          <p class="subheader-S5">UI Kits</p>
+          <p class="subheader-five">UI Kits</p>
         </article>
         <article class="products-section__card">
           <div>
@@ -240,7 +227,7 @@
               height="150"
             />
           </div>
-          <p class="subheader-S5">Social Media</p>
+          <p class="subheader-five">Social Media</p>
         </article>
         <article class="products-section__card">
           <div>
@@ -252,7 +239,7 @@
               height="150"
             />
           </div>
-          <p class="subheader-S5">Presentation</p>
+          <p class="subheader-five">Presentation</p>
         </article>
         <article class="products-section__card">
           <div>
@@ -264,7 +251,7 @@
               height="150"
             />
           </div>
-          <p class="subheader-S5">Fonts</p>
+          <p class="subheader-five">Fonts</p>
         </article>
         <article class="products-section__card">
           <div>
@@ -276,7 +263,7 @@
               height="150"
             />
           </div>
-          <p class="subheader-S5">Illustrations</p>
+          <p class="subheader-five">Illustrations</p>
         </article>
       </section>
 
@@ -818,7 +805,7 @@
         </div>
 
         <div class="faq-section__question_countainer">
-          <details class="faq__details">
+          <details class="faq__details" open>
             <summary class="faq__question">
               <h5 class="header-h5">Can I request a refund?</h5>
             </summary>
@@ -897,7 +884,7 @@
         <div class="blog-section__heder-box">
           <h2 class="header-h2">Latest Expert</h2>
           <div>
-            <a href="#" class="link--is-blue link-text-two text--is-blue"
+            <a href="#" class="link--is-blue link-text-two "
               >Explore All Articles
               <svg
                 width="16"
@@ -1051,7 +1038,7 @@
         </div>
         <div class="footer__navigation">
           <div class="footer__navigation-box">
-            <h5 class="header-h5">Company</h5>
+            <h2 class="header-h5">Company</h2>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
                 <a
@@ -1098,7 +1085,7 @@
             </ul>
           </div>
           <div class="footer__navigation-box">
-            <h5 class="header-h5">Products</h5>
+            <h2 class="header-h5">Products</h2>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
                 <a
@@ -1145,7 +1132,7 @@
             </ul>
           </div>
           <div class="footer__navigation-box">
-            <h5 class="header-h5">Account</h5>
+            <h2 class="header-h5">Account</h2>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
                 <a
@@ -1249,11 +1236,11 @@
         </div>
 
         <div class="footer__subscribe">
-          <h4 class="header-h4 is-block" style="margin-right: 24px">
-            Subscribe to Design Newsletter
-          </h4>
           <form class="footer__subscribe-form">
-            <label for="email" class="footer__subscribe-label"></label>
+            <label for="email" class="footer__subscribe-label header-h4"
+              >Subscribe to<br />
+              Design Newsletter</label
+            >
             <input
               type="email"
               id="email"

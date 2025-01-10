@@ -2,25 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalog Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our catalog with a wide selection of products tailored to meet your needs. Find details, pricing, and more." />
+
+    <link rel="icon" type="image/png" href="./Property 1=Favicon-2.png" />
+    <title>Catalog page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header class="header">
+      <div>
       <div class="header__logo__nav__box">
-        <h1 style="margin-right: 32px">
+        <a href="/" style="margin-right: 32px">
           <svg
             width="108"
             height="24"
             viewBox="0 0 108 24"
             fill="none"
+            aria-label="Main logo"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -56,7 +61,7 @@
               fill="#0265DC"
             />
           </svg>
-        </h1>
+        </a>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -68,7 +73,7 @@
             </li>
             <li class="nav__list__item">
               <a
-                href="./catalod.html"
+                href="./catalog.html"
                 class="list__item__link link-text-three link--is-black"
                 >Products</a
               >
@@ -91,15 +96,16 @@
           </ul>
         </nav>
       </div>
-      <div class="header__actions">
-        <label for="search-input"></label>
+      <form class="header__actions">
+        <label for="search-input" class="label--hidden"></label>
         <input
           id="search-input"
           class="base-input body-text-p3-regular header__input"
           type="search"
           placeholder="Search for Digital Assets"
+          name="search"
         />
-        <button type="button" class="base-btn is-blue btn--is-small">
+        <a href="./catalod.html" class="base-btn is-blue btn--is-small">
           <svg
             width="24"
             height="24"
@@ -115,14 +121,15 @@
               stroke-linejoin="round"
             />
           </svg>
-        </button>
-      </div>
+        </a>
+      </form>
+    </div>
     </header>
     <main class="main">
       <div class="catalog__promo-box">
         <h2 class="header-h1">
           Explore Top<br />
-          <a href="/" target="_self" class="header-h1 link--is-blue">UI Kits</a>
+          <a href="/" target="_self" class="header-h1 link--is-blue is-block-in-line">UI Kits</a>
           Design Assets
         </h2>
       </div>
@@ -627,7 +634,7 @@
                             stroke-linejoin="round"
                           />
                         </svg></button
-                      ><a href="" class="base-btn is-blue btn--is-small">
+                      ><a href="#" class="base-btn is-blue btn--is-small">
                         <svg
                           width="24"
                           height="24"

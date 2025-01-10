@@ -22,17 +22,24 @@
 }
 
 body {
+  width: max-content;
+  outline: 1px solid red;
+  margin: 0 auto;
   background: var(--BG-Alternative2, #f4f7fa);
 }
 
 /* --------------------------------------------------------------------Header */
 .header {
+  margin: 0 auto;
+  background-color: var(--background--is-white);
+  overflow: hidden;
+}
+.header > div {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1440px;
   padding: 24px 80px;
-  background-color: var(--background--is-white);
   box-shadow: 0px 4px 40px 0px #1d395f05;
 }
 .header__logo__nav__box {
@@ -64,8 +71,8 @@ body {
 .main {
   margin: 0 auto;
   max-width: 1440px;
-
   background-color: var(--background--is-white);
+  
 }
 .padding-horizontal {
   padding: 0px var(--padding-horizontal);
@@ -85,9 +92,10 @@ body {
   padding: 47px 47px 40px 80px;
   margin-bottom: 120px;
   background: linear-gradient(90deg, #f0f6fd 44%, #ffffff 100%);
+  overflow: hidden;
 }
 .promo-actions__box {
-  width: 35%;
+  width: 36%;
   display: flex;
   align-items: flex-start;
 
@@ -106,17 +114,25 @@ body {
 }
 
 .promo-img-one {
+  max-width: 281px;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  border-radius: 10px;
 }
 .promo-img-two {
+  max-width: 291px;
+  height: auto;
   position: absolute;
   top: 49px;
   left: 317px;
+  border: 5px solid #ffffff;
 }
 .promo-img-three {
+  max-width: 514px;
+  height: auto;
   position: absolute;
   top: 245px;
   left: 110px;
@@ -148,8 +164,11 @@ body {
   padding: 0px 80px;
   gap: 32px;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 .products-section__card {
+  max-width: 224px;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -191,6 +210,7 @@ body {
   grid-template-rows: repeat(7, auto);
   padding: 0px 74px;
   gap: 20px;
+  
 }
 .categories-card {
   width: 220px;
@@ -281,6 +301,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   gap: 32px;
+  overflow: hidden;
 }
 /* ------------------------------------------------------------------Trending Section */
 .trending-section {
@@ -303,7 +324,6 @@ body {
 }
 .swiper-wrapper {
   display: flex;
-
   gap: 16px;
   overflow: hidden;
 }
@@ -382,6 +402,8 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
   gap: 16px;
+  flex-wrap: wrap;
+  
 }
 .pricing-section__card {
   position: relative;
@@ -468,6 +490,7 @@ body {
   margin-bottom: 16px;
   border-radius: 10px;
   background-color: var(--BG-Base, #ffffff);
+  box-shadow: 0px 4px 40px 0px #1d395f14;
 }
 
 .faq__details summary {
@@ -475,7 +498,7 @@ body {
   padding: 24px 48px;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+
   z-index: 3;
   list-style: none;
 }
@@ -1038,6 +1061,7 @@ body {
   max-width: 1440px;
   padding-top: 120px;
   background-color: var(--background--is-white);
+  overflow: hidden;
 }
 
 .footer__info {
@@ -1103,9 +1127,7 @@ body {
   align-items: center;
   gap: 8px;
 }
-.footer__subscribe-input {
-  height: 64px;
-}
+
 .footer__terms {
   display: flex;
   align-items: center;
@@ -1132,6 +1154,17 @@ body {
 }
 
 /* ---------------------------------------------------------Inputs Style */
+.label--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .base-input {
   border: 2px solid var(--Elements-SeporatorBold, #1d36532b);
   color: var(--BG-Base-Invert);
@@ -1166,8 +1199,14 @@ body {
   height: 40px;
 }
 .footer__input {
-  height: 62px;
+  height: 64px;
   min-width: 240px;
+}
+.footer__subscribe-input {
+  height: 64px;
+}
+.footer__subscribe-label {
+  margin-right: 32px;
 }
 /* -------------------------------------------------------------Checkbox-Style */
 
@@ -1180,6 +1219,7 @@ body {
   height: 20px;
   margin: 0;
   border: 1px solid var(--Elements-Line, #1f324745);
+
   border-radius: 4px;
   background-color: #ffff;
   cursor: pointer;
@@ -1312,9 +1352,10 @@ body {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   background: #fff;
+
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
@@ -1324,7 +1365,7 @@ body {
 }
 
 .style-slider:checked + .switch .slider::after {
-  transform: translateX(20px);
+  transform: translateX(21px);
 }
 
 .switch:hover .slider {
@@ -1419,6 +1460,7 @@ body {
 /* ------------------------------------------------------Buttons-Style */
 .base-btn {
   width: min-content;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1434,6 +1476,7 @@ body {
   border-radius: 100px;
 }
 .btn--is-small {
+  height: 40px;
   padding: 7px 7px;
   width: min-content;
 }
@@ -1445,6 +1488,7 @@ body {
   min-width: 217px;
 }
 .btn--is-small-four {
+  height: auto;
   padding: 4px 18px;
 }
 .btn--is-medium {
@@ -1466,7 +1510,7 @@ body {
   padding: 16px 75px;
 }
 .btn--is-big {
-  padding: 18px 38px;
+  padding: 19px 38px;
 }
 .--is-onehundred {
   width: 100%;
@@ -1548,6 +1592,24 @@ body {
   cursor: not-allowed;
 }
 /* -------------------------------------------------Linc Style */
+.linc-in-line {
+  border-radius: 8px;
+  border: 4px solid transparent;
+  transition: color 0.5s ease;
+}
+.linc-in-line:hover {
+  color: var(--StaticPalette-Marina-Marina800, #0265dc);
+}
+.linc-in-line:active {
+  color: var(--StaticPalette-Marina-Marina900, #0054b6);
+}
+.linc-in-line:focus {
+  color: var(--StaticPalette-Marina-Marina900, #0054b6);
+  border: 4px solid var(--StaticPalette-Marina-Marina900);
+}
+.linc-in-line:disabled {
+  color: var(--StaticPalette-Marina-Marina900, #0054b6);
+}
 
 .footer__social-link {
   display: flex;
@@ -1659,9 +1721,6 @@ body {
   font-weight: 700;
   line-height: 62px;
   letter-spacing: -0.5px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .header-h2 {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
@@ -1669,36 +1728,24 @@ body {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.5px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .header-h3 {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 36px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .header-h4 {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .header-h5 {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .body-text-p1-regular {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
@@ -1712,21 +1759,18 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
 }
 .body-text-p2-bold {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  text-align: left;
 }
 .body-text-p3-regular {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
 }
 
 .body-text--p2-medium {
@@ -1741,7 +1785,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  text-align: left;
 }
 .link-text-two {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
@@ -1757,33 +1800,10 @@ body {
   line-height: 20px;
   text-align: center;
 }
-.subheader-S5 {
+.subheader-five {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
-  text-align: left;
 }
 
-.bakbak-one-regular {
-  font-family: "Bakbak One", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.poppins-regular {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: normal;
-}
