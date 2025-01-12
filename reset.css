@@ -158,7 +158,7 @@ table {
 }
 a {
   text-decoration: none;
-  color: var(--StaticPalette-Marina-Marina600, #3892f3);
+  color: var(--Text-Icons-Elements-Secondary, #2a3541d9);
 }
 figcaption {
   display: none;
