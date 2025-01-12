@@ -1283,21 +1283,30 @@ body {
   background-image: url(./img/Icons/Mark.svg);
   background-repeat: no-repeat;
 }
+.input-modified-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./img/Icons/Mark.svg);
+  background-repeat: no-repeat;
+}
 .input-modified-checkbox:hover {
   background: var(--BG-Alternative2, #f4f7fa);
 }
 
 .input-modified-checkbox:checked {
   background: var(--StaticPalette-Marina-Marina800, #0265dc);
-  border: none;
+  
 }
 .input-modified-checkbox:focus {
   border: 2px solid var(--StaticPalette-Marina-Marina600, #3892F3)
 }
 .input-modified-checkbox:disabled {
   background-color: var(--Elements-SeporatorBold, #1d36532b);
-  border: none;
-  position: relative;
   cursor: not-allowed;
 }
 .input-modified-checkbox:user-invalid {
