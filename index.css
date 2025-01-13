@@ -1285,6 +1285,7 @@ body {
   transform: translate(-50%, -50%);
   background-image: url(./img/Icons/Mark.svg);
   background-repeat: no-repeat;
+background-position: center;
 }
 
 
@@ -1398,7 +1399,7 @@ body {
 }
 
 .style-slider:checked + .switch .slider::after {
-  transform: translateX(2px);
+  transform: translateX(20px);
 }
 
 .switch:hover .slider {
