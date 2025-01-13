@@ -1047,8 +1047,8 @@ body {
 }
 .map-overlay {
   position: relative;
-  bottom: 110px;
-  left: 275px;
+  bottom: 108px;
+  left: 257px;
   width: max-content;
   padding: 18px 16px 18px 56px;
   border-radius: 10px;
@@ -1274,16 +1274,7 @@ body {
   transition: all 0.3s ease;
   margin-right: 9px;
 }
-.input-modified-checkbox::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  top: 4px;
-  left: 4px;
-  background-image: url(./img/Icons/Mark.svg);
-  background-repeat: no-repeat;
-}
+
 .input-modified-checkbox:checked::before {
   content: "";
   position: absolute;
@@ -1295,17 +1286,7 @@ body {
   background-image: url(./img/Icons/Mark.svg);
   background-repeat: no-repeat;
 }
-.input-modified-checkbox:focus::before {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 7px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(./img/Icons/Mark.svg);
-  background-repeat: no-repeat;
-}
+
 
 .input-modified-checkbox:hover {
   background: var(--BG-Alternative2, #f4f7fa);
