@@ -767,6 +767,12 @@ body {
 .catalog__card:hover {
   transform: scale(0.98);
 }
+.catalog__card:hover .span-catalog__card__price {
+  color: var(--Elements-Accent-Link, #0265DC); 
+}
+
+
+
 
 .catalog__card-tag {
   position: absolute;
