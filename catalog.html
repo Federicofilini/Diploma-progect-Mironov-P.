@@ -90,13 +90,13 @@
     </header>
     <main class="main">
       <div class="catalog__promo-box">
-        <h2 class="header-h-one">
+        <h1 class="header-h-one">
           Explore Top
           <span>
             <span class="text--is-blue">UI Kits</span>
             Design Assets</span
           >
-        </h2>
+        </h1>
       </div>
 
       <div class="catalog__container --is-flex">
@@ -376,6 +376,7 @@
               <legend class="header-h-four">Price</legend>
               <div class="price-range">
                 <div class="slider-container">
+                  <label for="range-min" class="label--hidden"></label>
                   <input
                     type="range"
                     id="range-min"
@@ -384,6 +385,7 @@
                     max="1000"
                     value="200"
                   />
+                  <label for="range-max" class="label--hidden"></label>
                   <input
                     type="range"
                     id="range-max"
@@ -445,9 +447,11 @@
                   type="button"
                   class="base-btn btn--is-transparent btn--is-small text-two-regular"
                 >
-                  Showing 12 out of 120 results.</button
-                ><button type="button" class="base-btn is-blue btn--is-small">
+                  Showing 12 out of 120 results.</button>
+
+                <button type="button" class="base-btn is-blue btn--is-small">
                   <svg
+                  title="windows"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -483,11 +487,13 @@
                       stroke-linejoin="round"
                     />
                   </svg></button
-                ><button
+                >
+                <button
                   type="button"
                   class="base-btn btn--is-gray btn--is-small"
                 >
                   <svg
+                  title="points"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -558,8 +564,8 @@
           <div class="card-box">
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-1.webp"
-                alt=""
+                src="./img/catalog__img/card-one.webp"
+                alt="image description"
                 class="trending-card__img"
                 width="325"
                 height="260"
@@ -581,6 +587,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -596,8 +603,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="#" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -623,7 +632,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-2.webp"
+                src="./img/catalog__img/card-two.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -644,6 +653,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -659,8 +669,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -686,7 +698,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-3.webp"
+                src="./img/catalog__img/card-three.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -709,6 +721,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -724,8 +737,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -751,7 +766,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-4.webp"
+                src="./img/catalog__img/card-four.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -772,6 +787,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -787,8 +803,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -805,7 +823,6 @@
                       </svg>
                     </a>
                   </div>
-                </div>
               </div>
               <span
                 class="catalog__card-tag bg-color--is-blue text-three-regular text--is-white"
@@ -814,7 +831,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-5.webp"
+                src="./img/catalog__img/card-five.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -837,6 +854,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -852,8 +870,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -879,7 +899,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-6.webp"
+                src="./img/catalog__img/card-sex.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -900,6 +920,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -915,8 +936,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -942,7 +965,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-7.webp"
+                src="./img/catalog__img/card-seven.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -963,6 +986,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -978,8 +1002,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1005,7 +1031,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-8.webp"
+                src="./img/catalog__img/card-eight.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -1026,6 +1052,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -1041,8 +1068,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1068,7 +1097,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-9.webp"
+                src="./img/catalog__img/card-nine.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -1091,6 +1120,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -1106,8 +1136,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1133,7 +1165,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-10.webp"
+                src="./img/catalog__img/card-ten.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -1154,6 +1186,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -1169,8 +1202,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1196,7 +1231,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-11.webp"
+                src="./img/catalog__img/card-eleven.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -1219,6 +1254,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -1234,8 +1270,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1261,7 +1299,7 @@
             </article>
             <article class="catalog__card">
               <img
-                src="./img/Catalog__img/card-12.webp"
+                src="./img/catalog__img/card-twelve.webp"
                 alt="Product Picture"
                 class="trending-card__img"
                 width="325"
@@ -1284,6 +1322,7 @@
                   <div>
                     <button class="base-btn btn--is-gray btn--is-small">
                       <svg
+                      title="heart"
                         width="24"
                         height="24"
                         viewBox="0 0 21 19"
@@ -1299,8 +1338,10 @@
                           stroke-linejoin="round"
                         />
                       </svg></button
-                    ><a href="" class="base-btn is-blue btn--is-small">
+                    >
+                    <a href="#" class="base-btn is-blue btn--is-small">
                       <svg
+                      title="bag"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -1334,6 +1375,8 @@
         </div>
       </div>
     </main>
+
+
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__header">

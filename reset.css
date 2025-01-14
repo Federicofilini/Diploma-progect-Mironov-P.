@@ -159,6 +159,7 @@ table {
 a {
   text-decoration: none;
   color: var(--Text-Icons-Elements-Secondary, #2a3541d9);
+  outline: none;
 }
 figcaption {
   display: none;
@@ -168,4 +169,7 @@ textarea {
 }
 select {
   cursor: pointer;
+}
+summary, details{
+  outline: none;
 }
