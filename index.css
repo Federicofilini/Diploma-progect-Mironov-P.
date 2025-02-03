@@ -261,23 +261,27 @@ body {
 .card--is-small--is-top {
   grid-column: 2;
 }
-
-.card__footer {
+.categories-card__footer {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.is--box {
-  display: block;
+.categories-card__footer p{
   position: relative;
+  
 }
-.is--box::before {
+.categories-card__footer p:not(:last-of-type)::after{
   position: absolute;
-  content: "•";
-  top: 0px;
-  right: -10px;
+    content: "•";
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
-.card__footer p:last-child::before {
+
+
+
+.categories-card__footer p:last-child::before {
   display: none;
 }
 .card--is-small--is-top {
@@ -347,6 +351,11 @@ body {
   width: 305px;
   height: auto;
   transition: opacity 0.5s ease;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .swiper-slide p,
 .swiper-slide h3,
